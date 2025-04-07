@@ -36,16 +36,16 @@ A estrutura do projeto é organizada da seguinte forma:
 ## Avaliação
 
 <ol>
-	<li>Utilize o Docker para criar uma imagem personalizada de alguma aplicação previamente feita por você.<br/><img src="./assets/1a.png"></li>
+	<li>Utilize o Docker para criar uma imagem personalizada de alguma aplicação previamente feita por você.<br/><img src="./assets/img/1.png"></li>
 	<ol style="list-style-type: lower-alpha;">
-		<li>Publique a sua imagem no Docker Hub.</li>
+		<li>Publique a sua imagem no Docker Hub.<br/><img src="./assets/img/1a.png"></li>
 	</ol>
 	<li>Suba sua imagem em algum cluster kubernetes, seguindo as seguintes especificações:</li>
 	<ol style="list-style-type: lower-alpha;">
-		<li>Utilize Deployment para subir sua aplicação com 4 réplicas.</li>
-		<li>Exponha sua aplicação de modo que ela fique acessível fora do Cluster (NODEPORT).</li>
-		<li>Se sua aplicação fizer uso de banco de dados, crie um POD com o mesmo e deixe-o acessível através do ClusterIP. Se sua aplicação não fizer uso de um BD suba uma imagem do Redis e crie um ClusterIP para o mesmo.</li>
-		<li>Crie algum probe para sua aplicação (Readness ou Liveness.)</li>
+		<li>Utilize Deployment para subir sua aplicação com 4 réplicas.<br/><img src="./assets/img/2a.png"></li>
+		<li>Exponha sua aplicação de modo que ela fique acessível fora do Cluster (NODEPORT).<br/><img src="./assets/img/2b.png"></li>
+		<li>Se sua aplicação fizer uso de banco de dados, crie um POD com o mesmo e deixe-o acessível através do ClusterIP. Se sua aplicação não fizer uso de um BD suba uma imagem do Redis e crie um ClusterIP para o mesmo.<br/><img src="./assets/img/2c.png"></li>
+		<li>Crie algum probe para sua aplicação (Readness ou Liveness.)<br/><img src="./assets/img/2d.png"></li>
 	</ol>
 	<li>Crie a estrutura para monitorar sua aplicação com o Prometheus e o Grafana (ou qualquer ferramenta a sua escolha: você deve ter um servidor de métricas e alguma ferramenta para dashboards).</li>
 	<ol style="list-style-type: lower-alpha;">
