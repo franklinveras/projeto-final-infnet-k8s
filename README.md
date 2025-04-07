@@ -36,7 +36,7 @@ A estrutura do projeto é organizada da seguinte forma:
 ## Avaliação
 
 <ol>
-	<li>Utilize o Docker para criar uma imagem personalizada de alguma aplicação previamente feita por você.<br/><img src="/assets/1a.png"></li>
+	<li>Utilize o Docker para criar uma imagem personalizada de alguma aplicação previamente feita por você.<br/><img src="assets/1a.png"></li>
 	<ol style="list-style-type: lower-alpha;">
 		<li>Publique a sua imagem no Docker Hub.</li>
 	</ol>
