@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: projeto-final
+spec:
+  replicas: 4
+  selector:
+    matchLabels:
+      app: projeto-final
+  template:
+    metadata:
+      labels:
+        app: projeto-final
+    spec:
+      containers:
+        - name: projeto-final
+          image: franklinveras/projeto-final:latest
+          ports:
+            - containerPort: 3000
+          livenessProbe:
+            httpGet:
+              path: /
+              port: 3000
+            initialDelaySeconds: 10
+            periodSeconds: 15
+          readinessProbe:
+            httpGet:
+              path: /
+              port: 3000
+            initialDelaySeconds: 5
+            periodSeconds: 10

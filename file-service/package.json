@@ -1,0 +1,26 @@
+{
+  "name": "file-service",
+  "version": "1.0.0",
+  "description": "file handling utils for heavy tasks",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://franklinveras@bitbucket.org/franklinveras/file-service.git"
+  },
+  "author": "Franklin Véras Sertão",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://bitbucket.org/franklinveras/file-service/issues"
+  },
+  "homepage": "https://www.docsignature.com.br",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.19.2",
+    "puppeteer": "^23.3.0",
+    "sharp": "^0.33.5"
+  }
+}
