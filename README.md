@@ -16,6 +16,10 @@ A estrutura do projeto é organizada da seguinte forma:
 	└── kubernetes/      # Configuração do Kubernetes para orquestração de containers.
 ```
 
+## Requisitos
+* Docker
+* Minikube
+  
 ## Como Executar o Projeto
 
 1. Clone o repositório:
@@ -23,15 +27,10 @@ A estrutura do projeto é organizada da seguinte forma:
 	 git clone https://github.com/franklinveras/projeto-final-infnet-k8s.git
 	 cd projeto-final-infnet-k8s
 	 ```
-
-2. Rode o jenkins com o docker composer:
-	 ```
-	 cd jenkins
-	 docker-compose up -d
-	 ```
-
-3. Configure as variáveis de ambiente:
-	execute o JenkinsFile no Jenkins.
+2. Aplique as configurações da pasta "kubernetes"
+	```
+	kubectl 
+	`` 
 
 ## Avaliação
 
