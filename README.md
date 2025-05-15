@@ -1,4 +1,12 @@
+<img src="./assets/img/infnet.png" alt="Logo" style="width: 150px; margin: auto; display: block;">
+<br/><br/>
+
 # Projeto final da matéria de Integração Contínua, DevOps e Computação em Nuvem [25E1_3]
+
+### Aluno: Franklin Véras Sertão
+### Professor: Renan Oliveira
+
+<hr/>
 
 ## Sumário
 - [Descrição do Projeto](#descrição-do-projeto)
