@@ -1,4 +1,4 @@
-<img src="./assets/img/infnet.png" alt="Logo" style="width: 150px; margin: auto; display: block;">
+<div style="text-align:center"><img src="./assets/img/infnet.png" alt="Logo" style="width: 150px"></div>
 <br/><br/>
 
 # Projeto final da matéria de Integração Contínua, DevOps e Computação em Nuvem [25E1_3]
