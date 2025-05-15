@@ -1,0 +1,17 @@
+#Adaptado de https://raw.githubusercontent.com/4linux/kube-prometheus-monitoring/master/Prometheus/prometheus-deployment.yaml
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: prometheus
+  labels:
+    app: prometheus-server
+spec:
+  selector:
+    app: prometheus-server
+  type: NodePort
+  ports:
+    - protocol: TCP
+      port: 9090
+      targetPort: 9090
+      nodePort: 30090

@@ -87,5 +87,3 @@ function generateThumb({suffix, path, width, height, fit}){
 export async function getInfo(path){
     return sharp(path).metadata()
 }
-
-//TODO: otimização da imagem para webp

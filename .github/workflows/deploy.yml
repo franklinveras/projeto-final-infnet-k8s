@@ -8,11 +8,26 @@ jobs:
   deploy:
     runs-on: self-hosted
     steps:
+      # Clona o código do repositório
       - name: Clonar o código
         uses: actions/checkout@v3
 
+      # Verifica se o acesso ao cluster está funcionando
       - name: Verificar acesso ao cluster
         run: kubectl cluster-info
 
+      # Faz login no Docker Hub usando secrets
+      - name: Fazer login no Docker Hub
+        run: echo "${{ secrets.DOCKER_PASSWORD }}" | docker login -u "${{ secrets.DOCKER_USERNAME }}" --password-stdin
+
+      # Constrói a imagem Docker e faz push para o Docker Hub
+      - name: Atualizar imagem no Docker Hub
+        run: |
+          docker build -t franklinveras/projeto-final:latest ./file-service
+          docker push franklinveras/projeto-final:latest
+
+      # Aplica os manifests do Kubernetes e reinicia o deployment
       - name: Aplicar manifests
-        run: kubectl apply -f kubernetes/
+        run: |
+          kubectl apply -f kubernetes/
+          kubectl rollout restart deployment projeto-final
